@@ -22,3 +22,12 @@ http://localhost:80
 $ curl localhost
 $ curl --header "Host: devopsbr.app" localhost
 ```
+
+### Install htpasswd on Debian
+```
+$ apt install apache2-utils -y
+```
+### Create a new user on htpasswd file
+```
+$ htpasswd -c .htpasswd admin
+```
