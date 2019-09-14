@@ -26,6 +26,7 @@ http://localhost:80
 ```
 $ curl localhost
 $ curl --header "Host: devopsbr.app" localhost
+$ curl -k https://localhost
 ```
 
 ### Install htpasswd on Debian
@@ -40,3 +41,9 @@ $ htpasswd -c .htpasswd admin
 ```
 $ openssl req -x509  -nodes -days 365 -newkey rsa:2048 -keyout ssl/private.key -out ssl/public.pem
 ```
+### Test nginx configuration
+```
+$ nginx -t
+```
+### Documentation
+http://nginx.org/en/docs/
